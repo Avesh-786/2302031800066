@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - Eco-Friendly Lifestyle Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #c5e1a5, #b2dfdb);
+            text-align: center;
+        }
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background: #388e3c;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            background: #2e7d32;
+            border-radius: 5px;
+        }
+        /* Hero Section */
+        .header {
+            background: url('https://source.unsplash.com/1600x900/?community,eco') center/cover;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 1s ease-in-out;
+        }
+        .content {
+            padding: 20px;
+        }
+        h2 {
+            color: #388e3c;
+        }
+        .testimonial {
+            background: white;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .testimonial:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            background: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #2e7d32;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="benefits.html">Sustainable Living Benefits</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="community.html">Community</a>
+        <a href="inspiration.html">Get Inspired</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="header">
+        What Our Community Says
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>Join a Thriving Eco-Friendly Community</h2>
+        
+        <div class="testimonial">🌱 <b>Jane D.</b> - "This platform has helped me reduce waste and live more sustainably!"</div>
+        <div class="testimonial">🌿 <b>Mike R.</b> - "I've learned so much about eco-friendly products. Highly recommended!"</div>
+        <div class="testimonial">🍃 <b>Sophia L.</b> - "Amazing community! Everyone is so supportive and inspiring."</div>
+        <div class="testimonial">🌎 <b>Daniel K.</b> - "I feel proud contributing to a greener planet with these simple tips."</div>
+
+        <p>Join us and share your sustainability journey!</p>
+        <a href="inspiration.html" class="button">Get Inspired</a>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Community Page Loaded Successfully!");
+        });
+    </script>
+
+</body>
+</html>
