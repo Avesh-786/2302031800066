@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Friendly Lifestyle Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #e8f5e9, #c8e6c9);
+            text-align: center;
+        }
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background: #388e3c;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            background: #2e7d32;
+            border-radius: 5px;
+        }
+        /* Hero Section */
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?nature,sustainability') center/cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            font-size: 28px;
+            font-weight: bold;
+            padding: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .hero button {
+            background: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .hero button:hover {
+            background: #2e7d32;
+        }
+        /* Content Section */
+        .content {
+            padding: 30px;
+        }
+        h2 {
+            color: #388e3c;
+        }
+        .button {
+            background: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #2e7d32;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="benefits.html">Sustainable Living Benefits</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="community.html">Community</a>
+        <a href="inspiration.html">Get Inspired</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        Welcome to <span style="color: #ffeb3b;">Eco-Friendly Lifestyle Hub</span>
+        <p>Join us in making the world a better place by adopting sustainable habits.</p>
+        <button onclick="navigateTo('benefits.html')">Learn More</button>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>Start Your Sustainable Journey Today</h2>
+        <p>Discover how you can make a difference through small, impactful lifestyle changes.</p>
+        <a href="how-it-works.html" class="button">How It Works</a>
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Home Page Loaded Successfully!");
+        });
+    </script>
+
+</body>
+</html>
