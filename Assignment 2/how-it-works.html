@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - Eco-Friendly Lifestyle Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #c8e6c9, #b2dfdb);
+            text-align: center;
+        }
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background: #388e3c;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            background: #2e7d32;
+            border-radius: 5px;
+        }
+        /* Hero Section */
+        .header {
+            background: url('https://source.unsplash.com/1600x900/?eco,sustainable') center/cover;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 26px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            animation: fadeIn 1s ease-in-out;
+        }
+        .content {
+            padding: 20px;
+        }
+        h2 {
+            color: #388e3c;
+        }
+        .step {
+            background: white;
+            padding: 15px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .step img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+        }
+        .step:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            background: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #2e7d32;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="benefits.html">Sustainable Living Benefits</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="community.html">Community</a>
+        <a href="inspiration.html">Get Inspired</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="header">
+        How It Works
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h2>Follow These Simple Steps</h2>
+        
+        <div class="step">
+            <img src="https://img.icons8.com/ios-filled/50/388e3c/eco.png" alt="Explore">
+            <p><b>Step 1:</b> Explore sustainable lifestyle tips and ideas.</p>
+        </div>
+        
+        <div class="step">
+            <img src="https://img.icons8.com/ios-filled/50/388e3c/recycle-bin.png" alt="Take Action">
+            <p><b>Step 2:</b> Take small actions in daily life to reduce waste.</p>
+        </div>
+
+        <div class="step">
+            <img src="https://img.icons8.com/ios-filled/50/388e3c/community.png" alt="Join Community">
+            <p><b>Step 3:</b> Join a community of like-minded eco-friendly people.</p>
+        </div>
+
+        <div class="step">
+            <img src="https://img.icons8.com/ios-filled/50/388e3c/earth-care.png" alt="Make Impact">
+            <p><b>Step 4:</b> Make an impact by sharing and inspiring others.</p>
+        </div>
+
+        <a href="community.html" class="button">Join the Community</a>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("How It Works Page Loaded Successfully!");
+        });
+    </script>
+
+</body>
+</html>
