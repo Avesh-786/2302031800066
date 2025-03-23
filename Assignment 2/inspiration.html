@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Inspired - Eco-Friendly Lifestyle Hub</title>
+    <title>How It Works - Eco-Friendly Lifestyle Hub</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,11 +11,16 @@
             padding: 0;
             background: linear-gradient(to bottom, #e0f7fa, #b2dfdb);
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
         /* Navigation Bar */
         .navbar {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 20px;
             background: #388e3c;
             padding: 15px;
             position: sticky;
@@ -26,7 +31,7 @@
         .navbar a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 10px 15px;
             font-size: 18px;
             transition: 0.3s;
         }
@@ -36,42 +41,59 @@
         }
         /* Hero Section */
         .header {
-            background: url('https://source.unsplash.com/1600x900/?green-energy,eco-friendly') center/cover;
-            height: 250px;
+            background: url('https://source.unsplash.com/1600x900/?eco-friendly,process') center/cover;
+            height: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
-            font-size: 26px;
+            font-size: 32px;
             font-weight: bold;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
             animation: fadeIn 1s ease-in-out;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
         }
+        /* Content Section */
         .content {
             padding: 20px;
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
         }
         h2 {
             color: #388e3c;
+            margin-bottom: 20px;
         }
-        .tip {
+        .step-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .step {
             background: white;
-            padding: 15px;
-            margin: 15px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
+            width: 40%;
+            min-width: 250px;
+            text-align: center;
         }
-        .tip:hover {
+        .step:hover {
             transform: scale(1.05);
         }
         .button {
             background: #4caf50;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 24px;
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 30px;
             transition: 0.3s;
         }
         .button:hover {
@@ -87,7 +109,7 @@
 
     <!-- Navigation Bar -->
     <div class="navbar">
-        <a href="home.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="login.html">Login</a>
         <a href="benefits.html">Sustainable Living Benefits</a>
         <a href="how-it-works.html">How It Works</a>
@@ -98,25 +120,27 @@
 
     <!-- Hero Section -->
     <div class="header">
-        Get Inspired to Live Sustainably
+        How Sustainable Living Works
     </div>
 
     <!-- Content Section -->
     <div class="content">
-        <h2>Eco-Friendly Lifestyle Ideas</h2>
+        <h2>Simple Steps to a Sustainable Life</h2>
         
-        <div class="tip">🌱 <b>Grow Your Own Food</b><br> Start a home garden with organic fruits and vegetables.</div>
-        <div class="tip">🌿 <b>Use Reusable Items</b><br> Switch to reusable water bottles, bags, and containers.</div>
-        <div class="tip">💡 <b>Save Energy</b><br> Turn off unused appliances and switch to LED bulbs.</div>
-        <div class="tip">🚴 <b>Choose Green Transportation</b><br> Walk, bike, or use public transport to reduce emissions.</div>
+        <div class="step-container">
+            <div class="step">🔄 <b>Reduce Waste</b><br> Minimize single-use plastics and recycle effectively.</div>
+            <div class="step">💡 <b>Save Energy</b><br> Switch to energy-efficient appliances and use renewable sources.</div>
+            <div class="step">🚰 <b>Conserve Water</b><br> Adopt water-saving habits like shorter showers and efficient irrigation.</div>
+            <div class="step">🌿 <b>Support Green Products</b><br> Choose eco-friendly and sustainable brands.</div>
+        </div>
 
-        <p>Small actions lead to big changes for a greener world!</p>
-        <a href="contact.html" class="button">Join the Movement</a>
+        <p>Making small changes leads to a big environmental impact!</p>
+        <a href="community.html" class="button">Join Our Community</a>
     </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            console.log("Get Inspired Page Loaded Successfully!");
+            console.log("How It Works Page Loaded Successfully!");
         });
     </script>
 
